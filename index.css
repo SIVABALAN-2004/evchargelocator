@@ -1,0 +1,146 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, #1C1C1C, #000000); /* Charcoal Grey to Black */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Glassmorphism Effect */
+.auth-container, .home-container, .reservation-container, .station-list {
+    text-align: center;
+    max-width: 420px;
+    background: rgba(0, 255, 127, 0.1); /* Electric Green tint */
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 255, 127, 0.2); /* Electric Green glow */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 255, 127, 0.2);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Home Page */
+.home-container h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 0 0 15px rgba(0, 255, 127, 0.8); /* Electric Green Glow */
+    margin-bottom: 20px;
+}
+
+/* Neon Glow Buttons */
+.btn {
+    display: inline-block;
+    padding: 14px 24px;
+    background: linear-gradient(45deg, #00FF7F, #00AEEF); /* Electric Green to Neon Blue */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    margin: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 127, 0.8); /* Electric Green glow */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 25px rgba(0, 255, 127, 1);
+}
+
+/* Glowing Input Fields */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    background: rgba(0, 255, 127, 0.1); /* Electric Green tint */
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 255, 127, 0.6);
+}
+
+input:focus, select:focus {
+    box-shadow: 0px 0px 20px rgba(0, 255, 127, 1);
+}
+
+/* Dropdown Styling */
+select {
+    appearance: none;
+    background: rgba(0, 255, 127, 0.2);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+select option {
+    background: #1C1C1C; /* Charcoal Grey */
+    color: white;
+    padding: 10px;
+}
+
+/* Station Card */
+.station-card {
+    padding: 20px;
+    background: rgba(0, 255, 127, 0.1); /* Electric Green tint */
+    border-radius: 12px;
+    margin: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(0, 255, 127, 0.2);
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+
+/* Hover effect */
+.station-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(0, 255, 127, 0.9);
+}
+
+/* Busy stations */
+.busy {
+    background: #ff3d00;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Wrapper for buttons to align them properly */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+} 

@@ -1,0 +1,38 @@
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.8);
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+}
+
+button {
+    padding: 12px 20px;
+    margin-top: 15px;
+    background: linear-gradient(45deg, #ff8c00, #ff3d00);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 140, 0, 1);
+}
