@@ -30,7 +30,7 @@ The application consists of:
 
 
 
-
+```
 EV-CHARGING-STATION-SPOTTER/
 │
 ├── .dist/
@@ -78,3 +78,7 @@ EV-CHARGING-STATION-SPOTTER/
 ├── README.md
 ├── cloudflared.exe
 └── config.yml
+```
+
+
+
